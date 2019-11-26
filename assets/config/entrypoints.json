@@ -1,0 +1,53 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/static/runtime.js",
+        "/static/vendors~app~page~page1.js",
+        "/static/vendors~app.js",
+        "/static/app.js"
+      ],
+      "css": [
+        "/static/app.css"
+      ]
+    },
+    "page": {
+      "js": [
+        "/static/runtime.js",
+        "/static/vendors~app~page~page1.js",
+        "/static/page.js"
+      ]
+    },
+    "page1": {
+      "js": [
+        "/static/runtime.js",
+        "/static/vendors~app~page~page1.js",
+        "/static/vendors~page1.js",
+        "/static/page1.js"
+      ],
+      "css": [
+        "/static/page1.css"
+      ]
+    },
+    "onlyCss": {
+      "js": [
+        "/static/runtime.js"
+      ],
+      "css": [
+        "/static/onlyCss.css"
+      ]
+    }
+  },
+  "integrity": {
+    "/static/runtime.js": "sha384-rw9ymbirQ0CvZNgZEf9i2HDcZheP7dFfStAtt6W2+CoB6cDTQakUoa8MIvxTn+wo",
+    "/static/vendors~app~page~page1.js": "sha384-OTXHZOvqEbcOIDekxOR4/MGN4PKwgdEA15QOZiPR6UEqSRGQZYcZZmB69MwEaglk",
+    "/static/vendors~app.js": "sha384-uEP+Eqy0gZ1EdN2IVl3j/3eEpiGyXRKwyMItV2s2Yzle6ztlSIV+KOCQNQBdUo4W",
+    "/static/app.js": "sha384-lW1lP+Q/KTSdljd8RSEiF+S7heffsKa4DWB00H8mYlhcKsuop98qvGoMMEZgzl+6",
+    "/static/app.css": "sha384-QM3drU12cgafwJLyVxuRlrSl0V2r5bbUmV45KodqbC6be/R/5L4pz9h4Jc6Nm15K",
+    "/static/page.js": "sha384-VVzwumLrLj5g2jsLuzf+08V8S6zIP2mtJJsJTmw0vsbxpC3fJuMW8xVPAhM6Vk+u",
+    "/static/vendors~page1.js": "sha384-nhz3pDKYIrmBYSI2/TDVtzUvAgt1IteHFvQKqOMwtQi6xFxmtqvJZH6JmWjWj2nj",
+    "/static/page1.js": "sha384-pQAQyQoV/LHhtd614xse89ASLHouF7G3BYc3uTIJ9Wz8GgvEQsUOu8RWu8yopQY3",
+    "/static/page1.css": "sha384-7RjZkHa+PHmsrQ5RGq+LNm28WLIhdBcqzU3R6H7ZxEjeXLFL6Vr5U1EoD3n2S6vd",
+    "/static/onlyCss.css": "sha384-SYUHoOMHUvIglMKKw0OhGxgX4403EHTZmWFraqitnvIVuLc1vTVasuU3ztn7+zyZ"
+  }
+}

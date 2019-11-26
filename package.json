@@ -1,0 +1,25 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.28.0",
+    "bootstrap": "^4.3.1",
+    "core-js": "^3.3.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
+    "popper.js": "^1.16.0",
+    "sass-loader": "^7.0.1",
+    "webpack-notifier": "^1.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "holderjs": "^2.9.6"
+  }
+}

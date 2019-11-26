@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap = "tests/bootstrap.php"
+         backupGlobals               = "false"
+         backupStaticAttributes      = "false"
+         colors                      = "true"
+         convertErrorsToExceptions   = "true"
+         convertNoticesToExceptions  = "true"
+         convertWarningsToExceptions = "true"
+         processIsolation            = "false"
+         stopOnFailure               = "false"
+         verbose = "true">
+
+    <testsuites>
+        <testsuite name="Encore">
+            <directory>tests</directory>
+            <exclude>tests/data/encore_generated_data.php</exclude>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="junit" target="data/tmp/logfile.xml"/>
+        <log type="testdox-html" target="data/tmp/test-docs.html"/>
+    </logging>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+    </php>
+
+</phpunit>

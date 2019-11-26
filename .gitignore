@@ -1,0 +1,9 @@
+vendor
+.idea
+.vscode
+node_modules
+yarn-error.log
+data/tmp
+.phpunit.result.cache
+www/static
+www/static/.gitKeep

@@ -1,0 +1,60 @@
+{
+    "name"        : "stelara/encore-webpack-standalone",
+    "type"        : "library",
+    "version"     : "1.0.0",
+    "description" : "Encore-Webpack standalone integration (without Symfony and Twig)",
+    "keywords": ["encore", "webpack", "symfony", "twig", "standalone"],
+    "license": "MIT",
+    "authors" : [
+        {
+          "name": "Stelio Stefanov",
+          "email": "stefanov.stelio@gmail.com"
+        }
+      ],
+    "require": {
+        "php"                       : ">=7.3",
+        "vlucas/phpdotenv"          : "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Process\\"          : "src/process/"
+        },
+		"files"     :    ["src/single/defines.php"],
+		"classmap"  :    []
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "dg/bypass-finals": "^1.1"
+    },
+    "scripts" : {
+      "test" : "vendor/phpunit/phpunit/phpunit --colors=always",
+      "serve": [
+        "@disableTimeout",
+        "php -S 0.0.0.0:8900 -t www"
+       ],
+      "dev-compile" : [
+        "@disableTimeout",
+        "yarn dev",
+        "@movie-encore-config"
+      ],
+      "dev-compile-watch" : [
+        "@disableTimeout",
+        "yarn watch",
+        "@movie-encore-config"
+      ],
+      "prod-compile" : [
+        "@disableTimeout",
+        "yarn build",
+        "@movie-encore-config"
+      ],
+      "disableTimeout": "Composer\\Config::disableProcessTimeout",
+      "movie-encore-config":"mv www/static/entrypoints.json www/static/manifest.json assets/config/"
+
+    },
+    "scripts-descriptions": {
+        "serve": "Run PHP dev server",
+        "test": "Run all unit tests",
+        "movie-encore-config": "Move encore configs outside www"
+    },
+    "minimum-stability": "dev"
+}
