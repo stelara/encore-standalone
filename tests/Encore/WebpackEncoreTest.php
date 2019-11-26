@@ -239,7 +239,7 @@ crossorigin="anonymous" src="/static/page.js"></script>';
      */
     public function getExpectedLinkTags()
     {
-        return '<link rel="stylesheet" integrity="sha384-CWLGK6KocNZbDLILk5RJ0+dl8lvB54CUSl4KQfNraduc4KQg921ahp9qpY/tB17K" 
+        return '<link rel="stylesheet" integrity="sha384-QM3drU12cgafwJLyVxuRlrSl0V2r5bbUmV45KodqbC6be/R/5L4pz9h4Jc6Nm15K" 
 crossorigin="anonymous" href="/static/app.css">';
     }
 
