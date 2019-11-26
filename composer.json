@@ -27,7 +27,7 @@
         "dg/bypass-finals": "^1.1"
     },
     "scripts" : {
-      "test" : "vendor/phpunit/phpunit/phpunit --colors=always",
+      "test" : "vendor/bin/phpunit --colors=always",
       "serve": [
         "@disableTimeout",
         "php -S 0.0.0.0:8900 -t www"
